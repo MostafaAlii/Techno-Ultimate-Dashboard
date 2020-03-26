@@ -6,7 +6,8 @@ var gulp 			=	require('gulp'),
 	pug 			=	require('gulp-pug'),
 	minify 			=	require('gulp-minify'),
 	notify 			=	require('gulp-notify'),
-	sourcemaps 		=	require('gulp-sourcemaps');
+  sourcemaps 		=	require('gulp-sourcemaps');
+  newer         = require('gulp-newer');
 
 gulp.task('html', function () {
   return gulp.src('stage/html/*.pug')
@@ -32,7 +33,7 @@ gulp.task('css', function () {
 // JS Task
 gulp.task('js', function () {
   return gulp.src("stage/js/*.js")
-          .pipe(concat('main.js'))
+          .pipe(concat('mainJS.js'))
           .pipe(minify())
           .pipe(gulp.dest('dist/js'))
           .pipe(livereload())

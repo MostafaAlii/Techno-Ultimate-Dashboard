@@ -11,4 +11,7 @@ html(lang="en")
         .page.home-page
             include pug/layouts/sidebar
             .content-area
-                h1 #{pageTitle}
+                include pug/layouts/header
+                .content
+                    h1 #{pageTitle}
+        include pug/layouts/scripts
