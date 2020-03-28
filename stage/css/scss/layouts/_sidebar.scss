@@ -1,14 +1,50 @@
-.sidebar{
-    width: 250px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    background-color: #292c33;
-    color: #fff;
-    padding: 15px;
-    transition: .3s;
-    &.no-sidebar{
-        right: -250px;
+.page{
+    .sidebar{
+        width: 250px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: #292c33;
+        color: #fff;
+        padding: 15px;
+        transition: .3s;
+        &.no-sidebar{
+            right: -250px;
+        }
+        .logo-area{
+            font-weight: bold;
+            font-size: 26px;
+            margin-bottom: 30px;
+        }
+    
+        // All Links
+        .links-area{
+            li{
+                a{
+                    color: #fff;
+                    padding: 10px;
+                    display: block;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+            > li > a {
+                position: relative;
+                padding-right: 20px;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    border: 3px dashed #fff;
+                    transform: translateY(-50%);
+                }
+            }
+        }
     }
 }
