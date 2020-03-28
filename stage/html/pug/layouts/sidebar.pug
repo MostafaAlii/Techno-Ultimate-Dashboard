@@ -1,16 +1,26 @@
 .sidebar
     .logo-area.text-center تكنو
     ul.links-area.list-unstyled
-        li: a(href="#") الاحصائيات العامة
         li
-            a(href="#") النماذج
+            a(href="#")
+                | الاحصائيات العامة  
+                i.fa.fa-dashboard.general-icon
+        li
+            a.toggle-submenu(href="#")
+                i.fa.fa-caret-left
+                | النماذج 
+                i.fa.fa-edit.general-icon
             ul.child-links.list-unstyled
                 li: a(href="#") المدخلات
                 li: a(href="#") مربع النصوص
                 li: a(href="#") خانات الاختيار
                 li: a(href="#") الراديو
+
         li
-            a(href="#") Collection
+            a.toggle-submenu(href="#")
+                i.fa.fa-caret-left.toggle-submenu
+                | التجميعات 
+                i.fa.fa-edit.general-icon
             ul.child-links.list-unstyled
                 li: a(href="#") loading
                 li: a(href="#") breadcrumb

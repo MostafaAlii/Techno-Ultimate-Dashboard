@@ -43,17 +43,31 @@
                     top: 50%;
                     width: 10px;
                     height: 10px;
-                    border-radius: 50%;
-                    border: 3px dashed #fff;
+                   // border-radius: 50%;
+                    //border: 3px solid #fff;
                     transform: translateY(-50%);
                 }
                 &:hover{
                     padding-right: 25px;
                 }
+                .fa-caret-left{
+                    float: left;
+                    position: relative;
+                    top: 7px;
+                    transition: 0.3s;
+                    &.down{
+                        transform: rotate(-90deg);
+                    }
+                }
+            }
+            // General Icons
+            .general-icon{
+                padding-left: 3px;
             }
             // Child Links
             .child-links{
                 position: relative;
+                display: none;
                 &:before{
                     content: '';
                     position: absolute;

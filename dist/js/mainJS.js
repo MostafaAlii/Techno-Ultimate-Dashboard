@@ -12,6 +12,12 @@ $(function (){
     $('.toggle-sidebar').on('click', function (){
         $('.content-area, .sidebar').toggleClass('no-sidebar');
     });
+
+    // Toggle Submenu
+    $(".toggle-submenu").on("click", function(){
+        $(this).find(".fa-caret-left").toggleClass("down");
+        $(this).next(".child-links").slideToggle();
+    });
 });
 const mySet = new Set();
 const myMap = new Map();
