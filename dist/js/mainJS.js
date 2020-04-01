@@ -1,5 +1,10 @@
 $(function (){
     'use strict';
+    // Refresh Btn 
+    $('.refresh-btn').on('click', function (){
+        location.reload(true);    
+    });
+
     // Nice Scroll Active
     $('html').niceScroll({
         cursorwidth: '8px',
