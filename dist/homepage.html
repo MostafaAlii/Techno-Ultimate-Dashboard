@@ -47,7 +47,22 @@
       </div>
       <!-- End Sidebar-->
       <div class="content-area">
-        <div class="header"><i class="fa fa-exchange lg toggle-sidebar"></i></div>
+        <!-- Start Header and Notification btn-->
+        <div class="header">
+          <!-- Toggle Sidebar Icon--><i class="fa fa-exchange lg toggle-sidebar"></i>
+          <!-- Notifications Icon Dropdown Menu-->
+          <!--.dropdown-->
+          <!--#notifications-btn(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')-->
+          <!--.dropdown-menu(aria-labelledby='')
+          | Notification Content Here
+          a.dropdown-item(href='#') Action
+          -->
+          <!-- Start User Notifications Dropdown Menu-->
+          <div class="dropdown notifications-container"><i class="fa fa-bell fa-lg toggle-notifications" id="notifications-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+            <div class="dropdown-menu" aria-labelledby="notifications-btn">الاشعارات</div>
+          </div>
+        </div>
+        <!-- End Header and Notification btn-->
         <div class="container-fluid">
           <div class="content">
             <div class="page-head">

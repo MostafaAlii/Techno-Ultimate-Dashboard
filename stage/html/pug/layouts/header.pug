@@ -1,2 +1,16 @@
+// Start Header and Notification btn
 .header
+    // Toggle Sidebar Icon
     i.fa.fa-exchange.lg.toggle-sidebar
+    // Notifications Icon Dropdown Menu
+    //.dropdown
+    //#notifications-btn(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+    //.dropdown-menu(aria-labelledby='')
+        | Notification Content Here
+        a.dropdown-item(href='#') Action
+    // Start User Notifications Dropdown Menu
+    .dropdown.notifications-container
+        i.fa.fa-bell.fa-lg.toggle-notifications#notifications-btn(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        .dropdown-menu(aria-labelledby='notifications-btn')
+            | الاشعارات
+// End Header and Notification btn
