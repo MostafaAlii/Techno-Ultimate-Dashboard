@@ -12,5 +12,27 @@
     .dropdown.notifications-container
         i.fa.fa-bell.fa-lg.toggle-notifications#notifications-btn(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
         .dropdown-menu(aria-labelledby='notifications-btn')
-            | الاشعارات
+            // Start Notification Content
+            .notify-head
+                | الاشعارات
+                span 50
+            .notify-content
+                ul.list-unstyled
+                    li
+                        i.fa.fa-envelope-o.fa-lg
+                        | لديك رسالة من ...
+                    li
+                        i.fa.fa-money.fa-lg
+                        | لديك نقود من ...
+                    li
+                        i.fa.fa-envelope-o.fa-lg
+                        | لديك رسالة من ...
+                    li
+                        i.fa.fa-envelope-o.fa-lg
+                        | لديك رسالة من ...
+                    li
+                        i.fa.fa-envelope-o.fa-lg
+                        | لديك رسالة من ...
+            .notify-foot.text-center: a(href="#") عرض جميع الاشعارات
+            // End Notification Content
 // End Header and Notification btn
