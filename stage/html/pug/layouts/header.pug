@@ -1,17 +1,11 @@
 // Start Header and Notification btn
 .header
     // Toggle Sidebar Icon
-    i.fa.fa-exchange.lg.toggle-sidebar
+    i.fa.fa-exchange.fa-lg.toggle-sidebar
     // Notifications Icon Dropdown Menu
-    //.dropdown
-    //#notifications-btn(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-    //.dropdown-menu(aria-labelledby='')
-        | Notification Content Here
-        a.dropdown-item(href='#') Action
-    // Start User Notifications Dropdown Menu
     .dropdown.notifications-container
-        i.fa.fa-bell.fa-lg.toggle-notifications#notifications-btn(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-        .dropdown-menu(aria-labelledby='notifications-btn')
+        i.fa.fa-bell.fa-lg.header-icon.toggle-notifications#notifications-btn(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        .dropdown-menu.notification-menu(aria-labelledby='notifications-btn')
             // Start Notification Content
             .notify-head
                 | الاشعارات
@@ -28,11 +22,13 @@
                         i.fa.fa-envelope-o.fa-lg
                         | لديك رسالة من ...
                     li
-                        i.fa.fa-envelope-o.fa-lg
+                        i.fa.fa-thumbs-o-up.fa-lg
                         | لديك رسالة من ...
                     li
                         i.fa.fa-envelope-o.fa-lg
                         | لديك رسالة من ...
             .notify-foot.text-center: a(href="#") عرض جميع الاشعارات
             // End Notification Content
+    // FullScreen Icon
+    i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
 // End Header and Notification btn
