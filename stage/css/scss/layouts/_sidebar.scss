@@ -13,9 +13,16 @@
             right: -250px;
         }
         .logo-area{
-            font-weight: bold;
-            font-size: 26px;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
+            img.logo{
+                width: 40%;
+                height: 40%
+            }
+            p.logoText{
+                font-weight: bold;
+                font-size: 26px;
+                color: #fff;
+            }
         }
         .plugin-btn-bar{
             li > button{
