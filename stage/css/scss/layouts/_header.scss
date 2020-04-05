@@ -12,6 +12,7 @@
     }
     .toggle-sidebar{
         cursor: pointer;
+        color: #555;
     }
     .notifications-container{
         display: inline-block;
@@ -57,6 +58,7 @@
                         border-bottom: 1px solid #e9e8e8;
                         margin-bottom: 10px;
                         font-size: 15px;
+                        font-weight: 600;
                         &:first-child{
                             padding-top: 0;
                         }
@@ -108,6 +110,10 @@
         float: left;
         .username{
             cursor: pointer;
+            .user-angle-icon{
+                color: #777;
+                font-weight: bold;
+            }
             .avatar{
                 width: 40px;
                 height: 40px;
@@ -123,19 +129,69 @@
             min-width: 500px;
             border: none;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 0 0 10px 10px;
             top: 10px !important;
+            border: 1px solid #ddd;
             &.show{
                 text-align: right;
+                text-indent: 3px;
             }
             &:before{
                 content: "";
                 position: absolute;
                 top: -20px;
-                left: 14px;
+                left: 20px;
                 border-style: solid;
                 border-width: 10px;
                 border-color: transparent transparent #333 transparent;
+            }
+            .userInfo{
+                h3{
+                    font-weight: bold;
+                    color: #777;
+                    font-size: 1.2em;
+                }
+                p{
+                    font-weight: bold;
+                    color: #888;
+                }
+            }
+            .activities-list{
+                li{
+                    color: #888;
+                    padding: 5px;
+                    font-weight: 600;
+                }
+            }
+            .userLinks{
+                .link-box{
+                    background-color: #fff;
+                    border: 1px solid #f3f3f3;
+                    padding: 10px;
+                    border-radius: 5px;
+                    text-align: right;
+                    cursor: pointer;
+                    .user-linkBox-icon{
+                        color: #777;
+                        float: right;
+                        position: relative;
+                        top: 5px;
+                    }
+                    .setting-icon{
+                        color: #2980b9;
+                    }
+                    .profile-icon{
+                        color: #16a085;
+                    }
+                    .logout-icon{
+                        color: #c0392b;
+                    }
+                    span{
+                        font-size: 13px;
+                        color: #777;
+                        font-weight: bold;
+                    }
+                }
             }
         }
     }

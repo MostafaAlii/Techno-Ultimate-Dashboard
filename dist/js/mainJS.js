@@ -20,8 +20,10 @@ $(function (){
     });
 
     // Sidebar & Content bar Toggle
-    $('.toggle-sidebar').on('click', function (){
-        $('.content-area, .sidebar').toggleClass('no-sidebar');
+    $(".toggle-sidebar").on("click", function (){
+        $(".content-area, .sidebar").toggleClass("no-sidebar");
+        //$(".content-area").css("padding-right", "50px");
+        //$("ul.links-area").css("display", "none");
         // If Explain هشوف شرح ليها عشان فى تركاية هنا
     });
     

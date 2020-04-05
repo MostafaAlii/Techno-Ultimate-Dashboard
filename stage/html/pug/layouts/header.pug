@@ -36,8 +36,28 @@
         .username#userInfoMenu(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
             img.avatar.rounded-circle(src="img/avatar/avatar.jpg", alt="صورة المستخدم")
             span.user مصطفى على
-            i.fa.fa-angle-down.fa-lg
+            i.fa.fa-angle-down.fa-lg.user-angle-icon
         .dropdown-menu.userDropdownMenu.dropdown-menu-left(aria-labelledby='userInfoMenu')
-            | معلومات 
+            .userInfo
+                h3 مصطفى على عبد العزيز
+                p مدير التطبيق
+            hr
+            ul.activities-list.list-unstyled
+                li اضافت تعليق على منشور 1
+                li قمت بانشاء منشور فى قسم "المنتجات"
+            hr
+            .row.userLinks
+                .col
+                    .link-box
+                        i.fa.fa-gears.fa-lg.fa-fw.user-linkBox-icon.setting-icon
+                        span.text-center الاعدادات
+                .col
+                    .link-box
+                        i.fa.fa-user.fa-lg.fa-fw.user-linkBox-icon.profile-icon
+                        span.text-center البروفايل
+                .col
+                    .link-box
+                        i.fa.fa-power-off.fa-lg.fa-fw.user-linkBox-icon.logout-icon
+                        span.text-center تسجيل الخروج
             
 // End Header and Notification btn
