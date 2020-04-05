@@ -104,4 +104,39 @@
             }
         }  
     }
+    .userInfoMenu-container{
+        float: left;
+        .username{
+            cursor: pointer;
+            .avatar{
+                width: 40px;
+                height: 40px;
+            }
+            .user{
+                font-weight: bold;
+                color: #777;
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+        }
+        .userDropdownMenu{
+            min-width: 500px;
+            border: none;
+            padding: 20px;
+            border-radius: 10px;
+            top: 10px !important;
+            &.show{
+                text-align: right;
+            }
+            &:before{
+                content: "";
+                position: absolute;
+                top: -20px;
+                left: 14px;
+                border-style: solid;
+                border-width: 10px;
+                border-color: transparent transparent #333 transparent;
+            }
+        }
+    }
 }
