@@ -40,24 +40,49 @@
         .dropdown-menu.userDropdownMenu.dropdown-menu-left(aria-labelledby='userInfoMenu')
             .userInfo
                 h3 مصطفى على عبد العزيز
-                p مدير التطبيق
-            hr
-            ul.activities-list.list-unstyled
-                li اضافت تعليق على منشور 1
-                li قمت بانشاء منشور فى قسم "المنتجات"
+                p مدير التطبيق            
+            .user-activities-list
+                .activities-list.list-unstyled
+                    .user-email-info
+                        small.user-email.text-muted الايميل
+                        h6.user-emailaddress mostafa0alii@gmail.com
+                    .user-phone-info
+                        small.user-phone.text-muted الهاتف
+                        h6.user-phone-number 0201015558628+
+                    .user-address-info
+                        small.user-address.text-muted الهاتف
+                        h6.user-fully-address المريوطية / الهرم
+                    .user-social-link
+                        small.user-social-text.text-muted التواصل الاجتماعى
+                    .social-link-bar.text-left
+                        // Facebook
+                        a(href="facebook-link").btn.btn-circle.btn-secondary
+                            i.fa.fa-facebook.fa-lg.fa-fw.facebook-icon
+                        // Youtube
+                        a(href="Youtube-link").btn.btn-circle.btn-secondary
+                            i.fa.fa-youtube.fa-lg.fa-fw.youtube-icon
+                        // LinkedIn
+                        a(href="Linkedin-link").btn.btn-circle.btn-secondary
+                            i.fa.fa-linkedin.fa-lg.fa-fw.linkedIn-icon
+                        // Google Plus
+                        a(href="GooglePlus-link").btn.btn-circle.btn-secondary
+                            i.fa.fa-google-plus.fa-lg.fa-fw.googlePlus-icon
             hr
             .row.userLinks
                 .col
                     .link-box
-                        i.fa.fa-gears.fa-lg.fa-fw.user-linkBox-icon.setting-icon
-                        span.text-center الاعدادات
+                        a(href="#")
+                            i.fa.fa-gears.fa-lg.fa-fw.user-linkBox-icon.setting-icon
+                            span.text-center الاعدادات
                 .col
                     .link-box
-                        i.fa.fa-user.fa-lg.fa-fw.user-linkBox-icon.profile-icon
-                        span.text-center البروفايل
+                        a(href="#")
+                            i.fa.fa-user.fa-lg.fa-fw.user-linkBox-icon.profile-icon
+                            span.text-center البروفايل
                 .col
                     .link-box
-                        i.fa.fa-power-off.fa-lg.fa-fw.user-linkBox-icon.logout-icon
-                        span.text-center تسجيل الخروج
+                        a(href="#")
+                            i.fa.fa-power-off.fa-lg.fa-fw.user-linkBox-icon.logout-icon
+                            span.text-center تسجيل الخروج
             
 // End Header and Notification btn
