@@ -172,7 +172,54 @@
                         padding: 5px;
                         font-weight: 600;
                     }
+                    .user-email-info,
+                    .user-phone-info,
+                    .user-address-info,
+                    .user-social-link{
+                        position: relative;
+                        padding-right: 15px;
+                        &:before{
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            top: 25%;
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 50%;
+                            border: 2px solid #777;
+                            transform: translateY(-25%);
+                            font-weight: bold;
+                        }
+                    }
+                    .user-emailaddress,
+                    .user-phone-number,
+                    .user-fully-address{
+                        padding-right: 5px;
+                        padding-left: 5px;
+                        position: relative;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            right: -10px;
+                            top: 0;
+                            width: 3px;
+                            height: 100%;
+                            background-color: #777;
+                        }
+                    }
                     .social-link-bar{
+                        padding-right: 5px;
+                        padding-left: 5px;
+                        position: relative;
+                        &::before{
+                                content: '';
+                                position: absolute;
+                                right: 5px;
+                                top: 0;
+                                width: 3px;
+                                height: 100%;
+                                background-color: #777;
+                        }
                         a{
                             background-color: #fff;
                             border: 1px solid #f3f3f3;
