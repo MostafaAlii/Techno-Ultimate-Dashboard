@@ -4,7 +4,6 @@ $(function (){
     $('.refresh-btn').on('click', function (){
         location.reload(true);    
     });
-
     // Nice Scroll Active
     $('html').niceScroll({
         cursorwidth: '8px',
@@ -12,21 +11,18 @@ $(function (){
         cursorborderradius: 0,
         railalign: 'left',
     });
-    
     // Toggle Submenu
     $(".toggle-submenu").on("click", function(){
         $(this).find(".fa-caret-left").toggleClass("down");
         $(this).next(".child-links").slideToggle();
     });
-
     // Sidebar & Content bar Toggle
     $(".toggle-sidebar").on("click", function (){
         $(".content-area, .sidebar").toggleClass("no-sidebar");
         //$(".content-area").css("padding-right", "50px");
         //$("ul.links-area").css("display", "none");
         // If Explain هشوف شرح ليها عشان فى تركاية هنا
-    });
-    
+    });    
     // Fullscreen Changing Btn
     $(".toggle-fullscreen").on("click", function() {
         $(this).toggleClass('full-screen');
@@ -38,7 +34,12 @@ $(function (){
                 closeFullscreen();
             }
         });
+    // Toggle Settings Box
+    $(".toggle-settings").on("click", function(){
+      $(this).find("i").toggleClass("fa-spin");
+      $(this).parent().toggleClass("hide-setting-box");
     });
+});
     // Open FullScreen
     var elem = document.documentElement;
     function openFullscreen() {
@@ -70,8 +71,5 @@ $(function (){
           document.msExitFullscreen();
         }
       }
-    
-
-    
 const mySet = new Set();
 const myMap = new Map();
